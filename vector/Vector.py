@@ -6,6 +6,7 @@ class Vector:
 		self.x = x
 		self.y = y
 
+	# define what to show when print'ing this class
 	def __repr__(self):
 		return 'Vector(%r, %r)' % (self.x, self.y)
 
