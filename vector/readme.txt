@@ -1,3 +1,6 @@
+# Testing code examples from Fluent Python book by Luciano Ramalho
+
+### quick help to get started
 # change directory
 cd src/vector
 
@@ -8,7 +11,7 @@ python -m ensurepip --default-pip --user
 python -m pip install pytest --user
 
 # make pytest available as command in Terminal
-# /Users/fschubert/Library/Python/2.7/bin
+# /Users/<username>/Library/Python/2.7/bin
 
 # check which shell you are using
 echo $SHELL
