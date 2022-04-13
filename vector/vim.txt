@@ -1,0 +1,6 @@
+# create vim pane and open file
+:vsp filename
+
+# switch between panes
+# 1. switch to cmd mode
+# 2. Ctrl+w left|right cursor to switch to left or right pane
