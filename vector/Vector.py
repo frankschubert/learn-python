@@ -6,10 +6,11 @@ class Vector:
 		self.x = x
 		self.y = y
 
-	# define what to show when print'ing this class
+	# Define what to show when print'ing this class
 	def __repr__(self):
 		return 'Vector(%r, %r)' % (self.x, self.y)
 
+	# Define the absolute as the magnitude of a vector
 	def __abs__(self):
 		return hypot(self.x, self.y)
 
@@ -32,3 +33,7 @@ class Vector:
 	# Multiplication: allow Vector to be on the right of the operation
 	def __rmul__(self, scalar):
 		return Vector(self.x * scalar, self.y * scalar)
+
+	# vector dot product
+	def dot(self, other):
+		return (self.x * other.x + self.y * other.y)

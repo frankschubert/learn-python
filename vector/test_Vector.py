@@ -36,3 +36,8 @@ def test_multiplication():
 	v2 = v1 * 2
 	assert v2.x == 2
 	assert v2.y == 4
+
+def test_dot_multiplication():
+	v1 = Vector(-6, 8)
+	v2 = Vector(5, 12)
+	assert v1.dot(v2) == 66

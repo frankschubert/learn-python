@@ -18,3 +18,8 @@ print 'v1 * 5 = ', v4
 
 v5 = 5 * v1
 print '5 * v1 = ', v5
+
+v3 = Vector(-6, 8)
+v4 = Vector(5, 12)
+scalar = v3.dot(v4)
+print scalar
