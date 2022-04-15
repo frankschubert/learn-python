@@ -4,7 +4,7 @@
 # change directory
 cd src/vector
 
-# python 2.7 install pip for local user only
+# (python 2.7 only!) install pip for local user only
 python -m ensurepip --default-pip --user
 
 # install pytest using pip
@@ -12,6 +12,7 @@ python -m pip install pytest --user
 
 # make pytest available as command in Terminal
 # /Users/<username>/Library/Python/2.7/bin
+# /Users/<username>/Library/Python/3.8/bin
 
 # check which shell you are using
 echo $SHELL
