@@ -1,4 +1,5 @@
-from math import hypot
+from __future__ import annotations
+import math
 
 class Vector:
 
@@ -12,7 +13,7 @@ class Vector:
 
 	# Define the absolute as the magnitude of a vector
 	def __abs__(self):
-		return hypot(self.x, self.y)
+		return math.hypot(self.x, self.y)
 
 	# Addition of Vector types
 	def __add__(self, other):
@@ -31,9 +32,15 @@ class Vector:
 		return Vector(self.x * scalar, self.y * scalar)
 
 	# Multiplication: allow Vector to be on the right of the operation
-	def __rmul__(self, scalar):
+	def __rmul__(self, scalar: int):
 		return Vector(self.x * scalar, self.y * scalar)
 
 	# vector dot product
-	def dot(self, other):
-		return (self.x * other.x + self.y * other.y)
+	def dot(self, other: Vector) -> int:
+		"""
+
+		:param other: Vector object to multiply with
+		:type other: Vector
+		:rtype: int
+		"""
+		return self.x * other.x + self.y * other.y
